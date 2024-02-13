@@ -15,5 +15,7 @@ style:
 	flake8 .
 types:
 	mypy .
+test:
+	pytest --lf -vv --cov=nl_economist --cov-branch .
 check:
-	make black isort style types
+	make black isort style types test
