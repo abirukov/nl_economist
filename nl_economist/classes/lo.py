@@ -1,18 +1,13 @@
 import dataclasses
 
 from nl_economist.classes.accounts import Accounts
-from nl_economist.constants import (
-    ACTIVATION_LO,
-    BASE_COEFFICIENT,
-    INCREASED_COEFFICIENT,
-    INCREASED_LO,
-    RECOMMENDED_LO,
-    UE_CURRENCY,
-)
+from nl_economist.constants import ACTIVATION_LO, INCREASED_LO, RECOMMENDED_LO, UE_CURRENCY
 
 ACTIVATION_LO_BONUS = 35.0
 RECOMMENDED_LO_BONUS = 87.0
 INCREASED_LO_BONUS = 217.0
+BASE_COEFFICIENT = 0.5  # Стартовый коэффициент ЛО
+INCREASED_COEFFICIENT = 0.8  # Повышенный коэффициент ЛО
 
 
 @dataclasses.dataclass
